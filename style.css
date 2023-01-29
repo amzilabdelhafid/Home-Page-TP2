@@ -1,0 +1,289 @@
+/* rest css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* common style */
+.pd-1{
+    padding: 1rem;
+}
+.pd-2{
+    padding: 2rem;
+}
+.pd-r-1{
+    padding: 1rem 1rem 1rem 0rem;
+}
+.pd-b-1{
+    padding-bottom: 2rem;
+}
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.w-30{
+    width:30%;
+}
+.w-50{
+    width:50%;
+}
+.w-70{
+    width:70%;
+}
+.w-80{
+    width:80%;
+}
+.w-100{
+    width:100%;
+}
+
+/* DOM.v */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+
+/* common class */
+
+.flex{
+    display: flex;
+}
+
+.flex-colum{
+    flex-direction: column;
+    
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-right{
+    justify-content: right;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+
+.aling-center{
+    align-items: center;
+}
+
+.aling-start{
+    align-items: flex-start;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* header */
+.logo{
+    border: 1px solid black;
+}
+.menu{
+    display: none;
+}
+.drop{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* section 1 hero*/
+
+#hero{
+    color: white;
+    background-color: rgb(122, 51, 237);
+}
+
+#hero img{
+    width: 400px;
+    box-shadow: 3px 0px 26px -10px rgba(218,198,219,0.75);
+    -webkit-box-shadow: 3px 0px 26px -10px rgba(218,198,219,0.75);
+    -moz-box-shadow: 3px 0px 26px -10px rgba(218,198,219,0.75);
+}
+
+#hero h1 span{
+    background-color: rgb(87, 59, 139);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#hero a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(212, 35, 103);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#hero p{
+    padding: 10px 0px 20px 0px;
+}
+
+
+/* section 2 about*/
+
+#about ul li :first-child{
+    font-size: 30px;
+} 
+
+#about ul li:nth-child(1) .chiffre{
+    color:rgb(130, 220, 238)
+}
+#about ul li:nth-child(2) .chiffre{
+    color:rgb(130, 159, 238)
+} 
+#about ul li:nth-child(3) .chiffre{
+    color:rgb(197, 130, 238)
+} 
+#about ul li:nth-child(4) .chiffre{
+    color:violet
+} 
+
+
+
+/* section 3 articles*/
+
+.grdinH4{
+    background: linear-gradient(90deg, rgba(130,220,238,1) 0%, rgba(130,159,238,1) 53%, rgba(220,100,238,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color1{
+    color:rgb(212, 35, 103);
+}
+
+/* section 4 Cardes*/
+#Cardes{
+    background-color: rgb(240, 240, 240);
+}
+.Card{
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+#Cardes img{
+    border-top-left-radius: 9px ;
+    border-top-right-radius: 9px ;
+}
+.titlCard{
+    max-height: 65px;
+    overflow: hidden;
+}
+.snipitCard{
+    overflow: hidden;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(210, 206, 214);
+}
+.bold{
+    font-weight: bold;
+}
+
+footer li {
+    margin: 25px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    
+}
+.fb{
+    background: url("../img/email.svg");
+    background-size: 50%;
+}
+
+/* media */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and  (max-width: 991px){
+    .w-30  {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .w-30  {
+        width: 100%;
+    }
+    .w-50  {
+        width: 100%;
+    }
+    .w-80  {
+        width: 100%;
+    }
+    /* header */
+    .menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    
+    /* section 1 hero */
+    #hero img{
+        width: 100%;
+    }
+
+    /* footer */
+    footer > div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
+    .w-30  {
+        width: 100%;
+    }
+    .w-50  {
+        width: 100%;
+    }
+    .w-80  {
+        width: 100%;
+    }
+}
